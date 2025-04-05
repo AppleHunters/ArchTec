@@ -161,7 +161,7 @@ div.menu {
     box-shadow: 100px 0px 1000px black;
     transform: translateX(-100%);
     opacity: 0;
-    transition: transform 0.3s ease, opacity 0.3s ease;
+
     z-index: 1100;  /* Maior que o header */
 }
 
@@ -250,15 +250,7 @@ span.linha{
     color: transparent;
 }
 
-@keyframes fadeOut {
-    from {
-        opacity: 1;
-    }
-    to {
-        opacity: 0;
-        visibility: hidden;
-    }
-}
+
 
 hr{
     margin: 20px 0px;
