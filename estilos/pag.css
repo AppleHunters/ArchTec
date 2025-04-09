@@ -28,6 +28,8 @@ body{
 
 }
 
+
+
 header{
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
     url('imagens/fachada-escola.jpeg');
@@ -161,8 +163,18 @@ div.menu {
     box-shadow: 100px 0px 1000px black;
     transform: translateX(-100%);
     opacity: 0;
-
+    transition: transform 0.3s ease, opacity 0.3s ease;
     z-index: 1100;  /* Maior que o header */
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
 }
 
 
